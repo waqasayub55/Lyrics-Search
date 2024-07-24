@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lyrics Search App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <main>
+    <header>
+      <div class="title"><i class="fas fa-headphones-alt"></i>LYRICS SEARCH APP</div>
+    </header>
+    <div class="glass-background">
+      <div class="glass-container">
+        <h1>Search For A Song</h1>
+        <h3>Get The Lyric For Any Song!</h3>
+        <div class="search-container">
+          <div class="search-input">
+            <input type="text" class="song" id="song" placeholder="Song name">
+            <input type="text" class="artist" id="artist" placeholder="Artist name">
+          </div>
+          <div class="button">
+            <button type="submit" class="submit">Search</button>
+          </div>
+        </div>
+      </div>
+      <div class="lyrics-container hidden">
+        <input type="checkbox" id="close-checkbox" class="close-checkbox">
+        <label for="close-checkbox" class="close-label">
+          <i class="fas fa-times"></i>
+        </label>
+        <pre class="lyrics"></pre>
+      </div>
+    </div>
+    <div class="bottom-row">
+      <div class="newly-added">
+        <h2>Newly Added Lyrics</h2>
+        <ul class="newly-added-list"></ul>
+      </div>
+      <div class="most-searched">
+        <h2>Most Searched Lyrics</h2>
+        <ul class="most-searched-list"></ul>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
